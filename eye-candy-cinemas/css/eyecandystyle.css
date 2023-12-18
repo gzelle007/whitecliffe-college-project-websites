@@ -1,0 +1,259 @@
+/*
+EYE CANDY CINEMA
+
+Color Scheme:
+Black       #2E282A
+Blue Green  #17BEBB
+Dark Green  #032026
+Apricot     #FAC9B8
+White       #FBFAF8
+*/
+
+/* Main */
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+a{
+    color: #FBFAF8;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+    font-size: 48pt;
+    font-weight: lighter;
+    background-color: #032026;
+    color: #FBFAF8;
+    text-align: center;
+    padding: 50px;
+    letter-spacing: 3px;
+}
+
+/* Navigation */
+
+header div{
+    background-color: #17BEBB;
+    height: 120px;
+}
+
+header div img{
+    background-color: #fff;
+    margin-left: 5%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header div ul{
+    margin: 60px 5% 0 0;
+    float: right;
+    list-style-type: none;
+}
+
+header div ul li{
+    background-color: #2E282A;
+    color: #FBFAF8;
+    display: inline-block;
+}
+
+header div ul li:hover{
+    background-color: #032026;
+    display: inline-block;
+}
+
+header div ul li .active-topnavbtn{
+    padding: 0px 40px;
+    background-color: #032026;
+    display: inline-block;
+}
+
+header div ul li .inactive-topnavbtn{
+    padding: 0px 40px;
+    background-color: #2E282A;
+    display: inline-block;
+}
+
+header div ul li a:hover{
+    color: #17BEBB;
+}
+
+header div li.active a{
+    background-color: #FAC9B8;
+}
+
+.buybtn{
+    padding: 20px 222px;
+    background-color: #17BEBB;
+    filter: drop-shadow(0px 4px 4px rgba(1, 24, 13, 0.25));
+
+}
+
+
+/* Contents */
+
+/* repeated styles */
+
+.preview1{
+    padding: 5% 80px;
+    background-color: #2E282A;
+    color: #FBFAF8;
+}
+
+.preview2{
+    padding: 5% 80px;
+    background-color: #032026;
+    color: #FBFAF8;
+}
+
+.centeredcontainerblack{
+    padding: 5% 80px;
+    background-color: #2E282A;
+    color: #FBFAF8;
+    text-align: center;
+}
+
+.centeredcontainergreen{
+    padding: 5% 80px;
+    background-color: #032026;
+    color: #FBFAF8;
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+
+table, tr, th, td{
+    padding: 10px 40px 14px 40px;
+    border: 1px solid #17BEBB;
+    border-collapse: collapse;
+}
+
+.tablenoborder{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: hidden !important;
+    vertical-align: top;
+}
+
+.tabledinfo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.leftcontainerblack{
+    padding: 5% 80px;
+    background-color: #2E282A;
+    color: #FBFAF8;
+    text-align: left;
+}
+
+.leftcontainergreen{
+    padding: 5% 80px;
+    background-color: #032026;
+    color: #FBFAF8;
+    text-align: left;
+}
+
+.highlightedcontainer{
+    padding: 5% 80px;
+    background-color: #17BEBB;
+    color: #FBFAF8;
+    text-align: center;
+}
+
+
+
+/* contact */
+
+.contactform{
+    padding: 20px 5%;
+    background-color: #2E282A;
+    color: #FBFAF8;
+    text-align: center;
+}
+
+.name, .email, .ccode, .phoneno, textarea{
+    padding: 15px;
+    margin: 5px;
+}
+
+.radiobtn{
+    font-weight: bold;
+    padding-right: 20px;
+}
+.dropdownheader{
+    padding: 0 30px 0 0;
+}
+
+.dropdownsel{
+    padding: 15px 290px 15px 15px;
+}
+
+.messagebox{
+    width: 505px;
+}
+
+.querybtn{
+    background-color: #17BEBB;
+    color: #032026;
+    filter: drop-shadow(0px 4px 4px rgba(1, 24, 13, 0.25));
+    padding: 15px 225px 15px;
+
+}
+
+/* Footer */
+
+footer{
+    background-color: #17BEBB;
+    color: #FBFAF8;
+    padding: 20px 5% 10px 5%;
+}
+
+footer div div ul{
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+
+footer div div ul li{
+    display: inline;
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+footer div div ul li:hover{
+    color: #032026;
+    display: inline;
+}
+
+footer div div ul li a:hover{
+    color: #FAC9B8;
+}
+
+footer div div table tr td a{
+    color: #FBFAF8;
+    text-decoration: none;
+    padding: auto;
+}
+
+footer p{
+    text-align: center;
+    color: #FAC9B8;
+}
+
+/*
+css-debugger
+*/
+/*
+*:not(path):not(g) {
+    color: hsla(210, 100%, 100%, 0.9) !important;
+    background: hsla(34, 100%, 50%, 0.5) !important;
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+    box-shadow: none !important;
+    }
+*/
