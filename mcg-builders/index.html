@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Descriptions -->
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="McG Builders is an Auckland, New Zealand based company lead by Cody Mackay is a qualified builder with over 15 years experience.">
+    <title>Creating a Responsive Website</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+    <!-- media attribute can be screen or all to include your design in printing page -->
+
+    <!-- React Script source that makes react work on your website -->
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js">
+    </script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <!-- id only use once -->
+    <div id="page">
+        <header class="index">
+            <!-- span = inline element like anchor tag, extra character on the element-->
+            <a class="logo" title="MCG Builders" href="index.html"><span>MCG Builders</span></a> 
+            <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+            <div class="hero">
+                <h1>Building dreams to reality</h1>
+                <a class="btn" title="Get advice from experienced builders" href="contact.html#contact">Get advice<span> from experienced builders</span></a>
+            </div>
+        </header>
+
+        <section class="summary" id="summary">
+            <h2>Building Specialists</h2>
+            <h4>AUCKLAND FAMILY OWNED AND OPERATED</h4>
+            <article class="oneColumn">
+                <p>We are and entire build specialist that is kiwi family owned and operated. We take pride in our workmanship to build safe and warm homes for the Auckland region. Lead by Cody Mackay, he leads with head and heart forging quality building and rock solid relationships built on trust, dependability and consistent communication.</p>
+            </article>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Services</h2>
+            <h4>OUR FIELD OF EXPERTISE</h4>
+            <aside>
+                <div class="content-new-builds">
+                    <img src="img/icon-house.svg" alt="Architecturals &amp; Kitset Homes">
+                    <h3>New Builds</h3>
+			        <p>Whether you are building architectural or kitset homes, we can help you. We can assure you that our work will follow plans to specifications and can work closely with you and your architect to create your vision.</p>
+                </div>
+            </aside>
+
+            <aside>
+                <div class="content-renos">
+                    <img src="img/icon-renovate.svg" alt="Alterations &amp; Remediation">
+                    <h3>Renovations</h3>
+			        <p>Are you looking for a builder who can update your dated home? We can work with you to manage, plan, gain consent and develop your customised dreams. We have 20+ years of experience in interior and exterior home and apartment renovations.</p>
+                </div>
+            </aside>
+
+            <aside>
+                <div class="content-maintenance">
+                    <img src="img/icon-maintain.svg" alt="Prevention Care">
+                    <h3>Maintenance</h3>
+			    <p>Maintenance is an unavoidable part of owning a property. Minor fixes and carrying out regular maintenance can avoid bigger problems down the line. We can help you come up with a maintenance plan to ensure your property is safe and running efficiently.</p>
+                </div>
+            </aside>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <h4>TURN YOUR DREAMS INTO REALITY</h4>
+                <div class="content-contact-blurb">
+                    <p>
+                        We have years of experience in new builds, renovations, maintenance and restorations.<br>
+                        Get in touch for a no obligation consultation.
+                    </p><br>
+                    <a class="btn" title="Let us help" href="contact.html#contact">Let us help</a>
+                </div>
+            <aside>
+                <div class="content"></div>
+            </aside>
+        </section>
+
+        <nav>
+            <ul>
+                <li>
+                    <a title="Contact" href="contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a title="Services" href="services.html">SERVICES</a>
+                </li>
+                <li>
+                    <a title="About Us" href="about.html">ABOUT</a>
+                </li>
+                <li>
+                    <a id="home" title="Home" href="index.html" class="activeNav">HOME</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p>&copy; Copyright 2021 | <strong>McG Builders Limited</strong> | All Rights Reserved</p>
+            <div class="content">
+                <a title="Privacy Policy" href="about.html#privacypolicy">Privacy Policy</a>
+                <a title="Terms of Service" href="about.html#termsofuse">Terms of Service</a>
+            </div>
+
+        </footer>
+        <div class="timedisplay"></div>
+    </div>
+
+    <script type="text/babel">
+
+        function tick(){
+            const element = (
+                <div>
+                    <h6>Time: {new Date().toLocaleTimeString()}</h6>
+                </div>
+            );
+
+            ReactDOM.render(element, document.querySelector('.timedisplay'));
+        }
+
+        setInterval(tick, 1000);
+
+    </script>
+</body>
+</html>
